@@ -60,6 +60,10 @@ export default function App() {
     localStorage.setItem('users', JSON.stringify(newUsers))
     setCurrentUser(username)
     setIsLoggedIn(true)
+    // Initialize user data
+    localStorage.setItem(`${username}_routine_${date}`, '')
+    localStorage.setItem(`${username}_tasks_${date}`, '[]')
+    localStorage.setItem(`${username}_gymDays`, '{}')
   }
 
   const handleLogin = (username: string, password: string) => {
@@ -75,6 +79,12 @@ export default function App() {
   const handleLogout = () => {
     setIsLoggedIn(false)
     setCurrentUser(null)
+    setRoutine('')
+    setNextDayRoutine('')
+    setTasks([])
+    setRoutineDays([])
+    setWorkoutType('')
+    setGymDays({})
   }
 
   const loadRoutine = (selectedDate: string) => {

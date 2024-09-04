@@ -227,7 +227,7 @@ export default function App() {
       <Tabs defaultValue="routine">
         <TabsList className="grid w-full grid-cols-3">
           <TabsTrigger value="routine">
-            <Rocket className="mr-2 h-4 w-4" /> Daily Routine - Format to enter HH : MM : Task
+            <Rocket className="mr-2 h-4 w-4" /> Daily Routine 
           </TabsTrigger>
           <TabsTrigger value="calendar">
             <CalendarIcon className="mr-2 h-4 w-4" /> Routine Calendar
@@ -239,7 +239,7 @@ export default function App() {
         <TabsContent value="routine">
           <Card className="mb-6">
             <CardHeader>
-              <CardTitle>Daily Routine</CardTitle>
+              <CardTitle>Daily Routine - Format to enter HH : MM : Task </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleRoutineSubmit} className="space-y-4">

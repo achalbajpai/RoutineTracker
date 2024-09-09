@@ -1,4 +1,4 @@
-# LifeTrack Pro
+# LifeTrack Pro v1
 
 LifeTrack Pro is a comprehensive personal productivity companion built with Next.js and React. It offers a range of features to help users manage their daily routines, track various aspects of their life, and stay motivated through a leaderboard system.
 

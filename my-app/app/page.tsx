@@ -12,6 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Lock, Unlock, UserPlus, LogIn, ArrowLeft, Eye, EyeOff } from 'lucide-react'
 import Cookies from 'js-cookie'
 import Image from 'next/image'
+import { Analytics } from "@vercel/analytics/react"
 
 type User = {
   username: string;
